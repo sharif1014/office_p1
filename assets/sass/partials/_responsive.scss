@@ -1,0 +1,83 @@
+@media screen and (max-width: 768px) {
+  .purchase {
+    padding: 3.6rem 5rem;
+  }
+  h1 {
+    &.heading {
+      margin-top: 4.2rem;
+      font-size: 6.4rem;
+      line-height: 8.5rem !important;
+    }
+  }
+  h2 {
+    &.heading {
+      font-size: 4rem;
+      line-height: 6rem !important;
+    }
+  }
+
+  .banner_left {
+    width: 100%;
+    margin-bottom: 4rem;
+  }
+  .banner_right {
+    display: none;
+    position: initial;
+  }
+  .slider_link {
+    font-size: 3.4rem;
+    line-height: 4.8rem;
+    margin-right: 3rem;
+  }
+  @keyframes moveLeft {
+    100% {
+      transform: translateX(-58%);
+    }
+  }
+  @keyframes moveLeftSlo {
+    100% {
+      transform: translateX(-66%);
+    }
+  }
+}
+@media screen and (max-width: 400px) {
+  .purchase {
+    padding: 2rem 1rem;
+  }
+  .logo {
+    box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.5);
+  }
+  .banner {
+    padding: 5rem 0;
+  }
+  .menu_link {
+    &:not(:last-child) {
+      margin-right: 1.2rem;
+    }
+  }
+  .menu_btn {
+    padding: 0.8rem 1.6rem;
+  }
+  h1 {
+    &.heading {
+      margin-top: 4rem;
+      font-size: 3.8rem;
+      line-height: 1.3em !important;
+      text-align: center;
+    }
+  }
+  h2 {
+    &.heading {
+      font-size: 3.4rem;
+      line-height: 1.3em !important;
+    }
+  }
+  .title {
+    font-size: 1.3rem;
+    line-height: 2.3rem;
+    color: #31343d;
+  }
+  .footer_text {
+    font-size: 1.4rem;
+  }
+}

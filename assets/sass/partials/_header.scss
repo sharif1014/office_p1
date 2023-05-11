@@ -1,0 +1,131 @@
+.navbar {
+  width: 100%;
+  height: 10rem;
+  background: $white;
+  //   display: flex;
+  //   align-items: center;
+}
+.menu_link {
+  font-size: 1.6rem;
+  font-weight: 500;
+  line-height: 1.3em;
+  color: $heading;
+  transition: all 0.4s ease-in-out;
+  &:not(:last-child) {
+    margin-right: 3rem;
+  }
+  &:hover {
+    color: $primary;
+  }
+}
+.menu_btn {
+  background-color: $primary;
+  padding: 1.3rem 3.8rem;
+  color: $white;
+  border-radius: 0.5rem;
+  border: 0.2rem solid $primary;
+  &:hover {
+    background: transparent;
+  }
+}
+.logo {
+  display: block;
+  width: 3.7rem;
+  height: 3.8rem;
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+.banner {
+  width: 100%;
+  padding: 19.4rem 0;
+  background: url("./../images/header.jpg") center no-repeat;
+  background-size: cover;
+  position: relative;
+  overflow: hidden;
+}
+.banner_content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.banner_left {
+  width: 896px;
+}
+.title {
+  display: inline-block;
+  padding: 10px 20px;
+  background: rgba(0, 113, 227, 0.3);
+  border-radius: 50px;
+  font-weight: 400;
+  font-size: 2rem;
+  line-height: 2.3rem;
+  color: #31343d;
+}
+
+.banner_right {
+  position: absolute;
+  left: 52.6%;
+  top: -10rem;
+}
+
+.banner_slider {
+  width: 100%;
+  padding: 3rem 0;
+  background-color: $primary;
+  color: $white;
+  overflow: hidden;
+  .slider_top,
+  .slider_bottom {
+    padding: 0 1.7rem;
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+  }
+  .slider_top {
+    margin-bottom: 3.6rem;
+    animation: moveLeft 5s linear infinite;
+  }
+  .slider_bottom {
+    animation: moveLeftSlo 7s linear infinite;
+  }
+}
+.slider_link {
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 75px;
+  color: #ffffff;
+  margin-right: 10rem;
+  transition: all 0.4s ease-in-out;
+  &:hover {
+    color: $hoverHead;
+  }
+}
+.slider_bottom {
+  &:hover {
+    animation-play-state: paused;
+  }
+}
+.slider_top {
+  &:hover {
+    animation-play-state: paused;
+  }
+}
+@keyframes moveLeft {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-27%);
+  }
+}
+@keyframes moveLeftSlo {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-30%);
+  }
+}

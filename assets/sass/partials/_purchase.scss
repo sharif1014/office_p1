@@ -1,0 +1,19 @@
+.purchase {
+  background: url("./../images/purchasebg.jpg");
+  padding: 9.9rem 44rem 12rem;
+  .heading {
+    line-height: 9rem;
+    color: #ffffff;
+    margin-bottom: 2.7rem;
+  }
+  .menu_btn {
+    font-size: 1.6rem;
+    line-height: 1.3em;
+    display: inline-block;
+    transition: all 0.4s ease-in-out;
+    &:hover {
+      color: $white;
+      border-color: $white;
+    }
+  }
+}
