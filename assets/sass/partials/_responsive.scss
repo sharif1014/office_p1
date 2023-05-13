@@ -6,48 +6,34 @@
     &.heading {
       margin-top: 4.2rem;
       font-size: 6.4rem;
-      line-height: 8.5rem !important;
+      line-height: 8.5rem;
     }
   }
   h2 {
     &.heading {
       font-size: 4rem;
-      line-height: 6rem !important;
+      line-height: 6rem;
     }
   }
 
-  .banner_left {
+  .hero_left {
     width: 100%;
     margin-bottom: 4rem;
   }
-  .banner_right {
+  .hero_right {
     display: none;
-    position: initial;
   }
   .slider_link {
     font-size: 3.4rem;
     line-height: 4.8rem;
     margin-right: 3rem;
   }
-  @keyframes moveLeft {
-    100% {
-      transform: translateX(-58%);
-    }
-  }
-  @keyframes moveLeftSlo {
-    100% {
-      transform: translateX(-66%);
-    }
-  }
 }
 @media screen and (max-width: 400px) {
   .purchase {
     padding: 2rem 1rem;
   }
-  .logo {
-    box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.5);
-  }
-  .banner {
+  .hero {
     padding: 5rem 0;
   }
   .menu_link {
@@ -71,6 +57,14 @@
       font-size: 3.4rem;
       line-height: 1.3em !important;
     }
+  }
+  .slider_top{
+    margin-bottom: 2rem !important;
+  }
+  .slider_link{
+    margin-right: 5rem !important;
+    font-size: 4rem !important;
+    line-height: 5.6rem !important;
   }
   .title {
     font-size: 1.3rem;

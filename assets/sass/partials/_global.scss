@@ -1,6 +1,7 @@
 body {
   font-family: "Roboto", sans-serif;
   font-style: normal;
+  overflow-x: hidden;
 }
 a {
   text-decoration: none;
@@ -10,6 +11,7 @@ h1 {
     font-size: 8rem;
     font-weight: 700;
     line-height: 1.3em;
+    margin: 0;
   }
 }
 h2 {
@@ -17,13 +19,13 @@ h2 {
     font-size: 6.4rem;
     font-weight: 700;
     line-height: 1.3em;
-    text-align: center;
+    text-align: center;margin: 0;
   }
 }
 h3 {
   &.heading {
     font-size: 4.8rem;
-    font-weight: 600;
+    font-weight: 600;margin: 0;
   }
 }
 
